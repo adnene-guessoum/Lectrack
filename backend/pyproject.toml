@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "lectrack-backend"
+version = "0.1.0"
+description = "Backend django pour un tracker de lecture avec prise de note"
+authors = ["Adnene_wsl <adnen.guessoum@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "lectrack_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.4"
+djangorestframework = "^3.14.0"
+django-summernote = "^0.8.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+pylint = "^2.15.9"
+mypy = "^0.991"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
